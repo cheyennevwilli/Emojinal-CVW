@@ -16,18 +16,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMessage(sender: UIButton) {
-        
+        let selectedEmotion = sender.titleLabel?.text
         // in as much detail as possible
         // pseudo-code the things that need to happen
         // when a user clicks an emoji button
 
-        let alertController = UIAlertController(title: "Got it!", message: "This is how you feel!", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Got it!", message: "\(emojis[selectedEmotion!]!)", preferredStyle: .alert)
         
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         present(alertController, animated: true, completion: nil)
 
     }
-
+    
+    let emojis = ["😝": "You Feel Silly", "🙃": "You Feel Fake Fine"]
 }
 
