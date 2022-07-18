@@ -41,9 +41,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-tl-yyU">
+                                <rect key="frame" x="70" y="761" width="274" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <connections>
+                                    <segue destination="Lcx-6h-29w" kind="show" id="SMt-4X-92L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.7041758431854872" blue="0.66060447868856431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RUE-tl-yyU" secondAttribute="trailing" constant="70" id="BKe-sb-wTo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RUE-tl-yyU" secondAttribute="bottom" constant="70" id="grL-hq-QIn"/>
+                            <constraint firstItem="RUE-tl-yyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="yeX-Ie-KLB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -55,7 +68,7 @@
             <objects>
                 <viewController id="Lcx-6h-29w" customClass="SecondViewController" customModule="Emojinal_CVW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wgf-ju-pCc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HI CHEYENNE!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sW2-Rj-S9c">
@@ -66,7 +79,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HI JESSI!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMS-xC-bel">
-                                <rect key="frame" x="120.5" y="421.5" width="173" height="53"/>
+                                <rect key="frame" x="120.5" y="394.5" width="173" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,14 +91,26 @@
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3M-lk-Hri">
+                                <rect key="frame" x="20" y="507.5" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Jessi's Button"/>
+                                <connections>
+                                    <action selector="jessiButtonTapped:" destination="Lcx-6h-29w" eventType="touchUpInside" id="WZv-P3-ieZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="55j-FE-w2e"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="oMS-xC-bel" firstAttribute="centerY" secondItem="Wgf-ju-pCc" secondAttribute="centerY" id="DA5-9Y-RGp"/>
                             <constraint firstItem="oMS-xC-bel" firstAttribute="centerX" secondItem="Wgf-ju-pCc" secondAttribute="centerX" id="ic4-JC-BBr"/>
+                            <constraint firstItem="Y3M-lk-Hri" firstAttribute="top" secondItem="oMS-xC-bel" secondAttribute="bottom" constant="60" id="j1n-up-CGJ"/>
+                            <constraint firstItem="55j-FE-w2e" firstAttribute="trailing" secondItem="Y3M-lk-Hri" secondAttribute="trailing" constant="20" id="l2t-Mh-mq3"/>
+                            <constraint firstItem="Y3M-lk-Hri" firstAttribute="leading" secondItem="55j-FE-w2e" secondAttribute="leading" constant="20" id="pJS-QE-csk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6Ne-EE-7g9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNR-0n-hfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
