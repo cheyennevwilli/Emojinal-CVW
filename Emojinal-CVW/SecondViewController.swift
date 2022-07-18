@@ -19,7 +19,7 @@ class SecondViewController: UIViewController {
 
     @IBAction func jessiButtonTapped(_ sender: Any) {
         
-        let alertController = UIAlertController(title: "Testing", message: "Can you see this Jessi?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Testing", message: "Can you see this Jessi? Is this cheeky enough?", preferredStyle: .alert)
         
         alertController.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: nil))
         
